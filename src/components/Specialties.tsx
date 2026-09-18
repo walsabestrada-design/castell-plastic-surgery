@@ -33,7 +33,7 @@ export default function Specialties() {
                     onClick={() => setActive(i)}
                     aria-expanded={isOpen}
                     aria-controls={`specialty-panel-${i}`}
-                    className="flex w-full items-center gap-5 py-6 text-left"
+                    className="flex w-full items-center gap-5 py-6 text-left transition-colors duration-300 hover:bg-[var(--background)]/50"
                   >
                     <span
                       className={`font-serif text-sm transition-colors duration-300 ${
@@ -91,7 +91,7 @@ export default function Specialties() {
           <div className="hidden lg:block">
             <div className="sticky top-28 overflow-hidden rounded-[1.75rem] shadow-[0_40px_80px_-30px_rgba(16,28,44,0.4)]">
               <div className="relative aspect-[4/5] w-full">
-                <AnimatePresence mode="wait">
+                <AnimatePresence>
                   <motion.div
                     key={active}
                     initial={{ opacity: 0, scale: 1.03 }}
@@ -111,14 +111,14 @@ export default function Specialties() {
                   </motion.div>
                 </AnimatePresence>
                 <div className="absolute inset-x-0 bottom-0 p-8">
-                  <AnimatePresence mode="wait">
+                  <AnimatePresence>
                     <motion.p
                       key={active}
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="text-sm leading-relaxed text-white/90"
+                      className="absolute inset-x-8 bottom-8 text-sm leading-relaxed text-white/90"
                     >
                       {specialties[active].description}
                     </motion.p>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { brand, contact, hero } from "@/lib/content";
 import { shouldSkipIntro } from "@/lib/intro";
 
-const OFFSETS = [0.2, 0.4, 0.6, 0.8];
+const OFFSETS = [0.2, 0.4, 0.6];
 
 export default function Hero() {
   const [base, setBase] = useState(1.9);
@@ -18,7 +18,7 @@ export default function Hero() {
     if (shouldSkipIntro()) setBase(0);
   }, []);
 
-  const [d1, d2, d3, d4] = OFFSETS.map((o) => base + o);
+  const [d1, d2, d3] = OFFSETS.map((o) => base + o);
 
   return (
     <section id="top" className="relative flex min-h-[92vh] items-end overflow-hidden bg-[var(--foreground)] sm:min-h-screen">
@@ -89,15 +89,6 @@ export default function Hero() {
               </span>
             </a>
           </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: d4 }}
-            className="mt-8 text-xs tracking-[0.18em] text-white/50"
-          >
-            CADA CONSULTA, DIRECTAMENTE CON EL DR. CASTELL — SIN INTERMEDIARIOS
-          </motion.p>
         </div>
       </div>
     </section>

@@ -53,7 +53,11 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent-bright);
+  /* No explicit color: defaults to currentColor, so the ring always matches
+     the focused element's own text color — navy on the light sections,
+     white/gold on the dark hero — instead of one fixed color that would
+     fail contrast in one context or the other. */
+  outline: 2px solid;
   outline-offset: 3px;
   border-radius: 2px;
 }
