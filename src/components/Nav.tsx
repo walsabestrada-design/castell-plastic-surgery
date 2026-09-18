@@ -89,7 +89,7 @@ export default function Nav() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-9 md:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {nav.map((item) => {
             const isActive = active === item.href;
             return (
@@ -143,7 +143,7 @@ export default function Nav() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
-          className="relative z-10 flex h-9 w-9 flex-col items-center justify-center gap-1.5 md:hidden"
+          className="relative z-10 flex h-9 w-9 flex-col items-center justify-center gap-1.5 lg:hidden"
         >
           <span
             className={`h-px w-6 transition-transform duration-300 ${textClass} ${
@@ -166,7 +166,7 @@ export default function Nav() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.35, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-[var(--foreground)]/10 bg-[var(--surface)] md:hidden"
+            className="overflow-hidden border-t border-[var(--foreground)]/10 bg-[var(--surface)] lg:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-6">
               {nav.map((item, i) => (
