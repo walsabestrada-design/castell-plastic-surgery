@@ -83,7 +83,7 @@ export default function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10">
         <a href="#top" className={`flex items-center gap-2.5 transition-colors duration-500 ${textClass}`}>
-          <Logo className={`h-4 w-4 shrink-0 ${showChrome ? "text-[var(--accent)]" : "text-[var(--accent-bright)]"}`} />
+          <Logo className={`h-5 w-5 shrink-0 ${showChrome ? "text-[var(--accent)]" : "text-[var(--accent-bright)]"}`} />
           <span className="font-serif text-lg tracking-[0.25em]">
             {brand.name.toUpperCase()}
           </span>

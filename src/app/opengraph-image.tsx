@@ -26,9 +26,13 @@ export default async function Image() {
             marginBottom: 36,
           }}
         >
-          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" style={{ display: "flex" }}>
-            <circle cx="12" cy="12" r="9.5" stroke="#d4af5f" strokeWidth="1.4" />
-            <path d="M8 12.5l2.5 2.5L16 9" stroke="#d4af5f" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" style={{ display: "flex" }}>
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              fill="#d4af5f"
+              d="M4 19V6h3.2v3.5h3.2V6h3.2v3.5h3.2V6H20v13H4Zm8-4.8-1.1 1.4V19h2.2v-3.4L12 14.2Z"
+            />
           </svg>
           <div
             style={{

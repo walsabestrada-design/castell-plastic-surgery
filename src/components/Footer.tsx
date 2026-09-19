@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
             <p className="flex items-center gap-2.5 font-serif text-lg tracking-[0.2em] text-white">
-              <Logo className="h-4 w-4 shrink-0 text-[var(--accent-bright)]" />
+              <Logo className="h-5 w-5 shrink-0 text-[var(--accent-bright)]" />
               {brand.name.toUpperCase()}
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed">
