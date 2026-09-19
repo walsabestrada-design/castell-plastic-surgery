@@ -56,7 +56,7 @@ export default function Specialties() {
                       className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-lg transition-all duration-300 ${
                         isOpen
                           ? "rotate-45 border-[var(--accent)] bg-[var(--accent)] text-white"
-                          : "border-[var(--foreground)]/20 text-[var(--foreground)]/60"
+                          : "border-[var(--foreground)]/40 text-[var(--foreground)]/70"
                       }`}
                       aria-hidden="true"
                     >

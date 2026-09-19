@@ -81,7 +81,7 @@ export default function Hero() {
             </a>
             <a
               href="#trayectoria"
-              className="group inline-flex items-center gap-2 rounded-full border border-white/40 px-7 py-3 text-sm tracking-wide text-white transition-colors hover:border-white hover:text-white"
+              className="group inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/10 px-7 py-3 text-sm tracking-wide text-white shadow-[0_2px_12px_-4px_rgba(0,0,0,0.4)] backdrop-blur-sm transition-colors hover:border-white hover:bg-white/20"
             >
               {brand.ctaSecondary}
               <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">

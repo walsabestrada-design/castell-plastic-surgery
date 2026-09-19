@@ -131,7 +131,7 @@ export default function Nav() {
             className={`whitespace-nowrap rounded-full border px-5 py-2 text-sm tracking-wide transition-all duration-300 active:scale-[0.97] ${
               showChrome
                 ? "border-[var(--foreground)] text-[var(--foreground)] hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white hover:shadow-[0_4px_16px_-4px_rgba(124,95,28,0.5)]"
-                : "border-white/70 text-white hover:border-[var(--accent-bright)] hover:bg-[var(--accent-bright)] hover:text-[var(--foreground)]"
+                : "border-white/90 bg-white/10 text-white backdrop-blur-sm hover:border-[var(--accent-bright)] hover:bg-[var(--accent-bright)] hover:text-[var(--foreground)]"
             }`}
           >
             {brand.ctaPrimary}
